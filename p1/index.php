@@ -1,5 +1,5 @@
 <?php
-require `index-view.php`;
+require('index-view.php');
 /*
 Random dice generator 1-6 values
 3 players
