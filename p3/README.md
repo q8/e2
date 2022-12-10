@@ -19,7 +19,7 @@ N/A
 ## Codeception testing output
 
 ```
-Codeception PHP Testing Framework v5.0.5 https://helpukrainewin.org
+Codeception PHP Testing Framework v5.0.5
 
 Tests.Acceptance Tests (1) -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 P3Cest: Play game
