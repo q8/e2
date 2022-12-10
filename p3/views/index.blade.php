@@ -19,9 +19,9 @@
     <h2>Play</h2>
     <form method='POST' action="/process">
         Pick a dice size:
-        <label><input type='radio' name='choice' value='6'>6</label>
-        <label><input type='radio' name='choice' value='8'>8</label>
-        <input type='submit' value='Roll!'>
+        <label><input type='radio' test='six-radio' name='choice' value='6'>6</label>
+        <label><input type='radio' test='eight-radio' name='choice' value='8'>8</label>
+        <input type='submit' test='submit-button' value='Roll!'>
     </form>
 
     @if ($app->errorsExist())
@@ -33,11 +33,13 @@
     @endif
 
     @if ($playerRoll)
-        <h2>Results</h2>
-        <ul>
-            <li>Player rolled: {{ $playerRoll }}</li>
-            <li>Computer rolled: {{ $computerRoll }}</li>
-            <li>The winner is: {{ $won }}</li>
-        </ul>
+        <div test='results-div'>
+            <h2>Results</h2>
+            <ul>
+                <li>Player rolled: {{ $playerRoll }}</li>
+                <li>Computer rolled: {{ $computerRoll }}</li>
+                <li>The winner is: {{ $won }}</li>
+            </ul>
+        </div>
     @endif
 @endsection
