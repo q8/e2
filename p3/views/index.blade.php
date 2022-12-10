@@ -25,7 +25,7 @@
     </form>
 
     @if ($app->errorsExist())
-        <ul class='error alert alert-danger'>
+        <ul test='validation-output' class='error alert alert-danger'>
             @foreach ($app->errors() as $error)
                 <li>{{ $error }}</li>
             @endforeach
